@@ -39,14 +39,14 @@
 
 .Right {
   float: right;
-  width: 60%;;
+  width: 60%;
 }
 
 .Left {
   float: left;
   width: 40%;
   background-color: #cdecc0;
-  height: 100vh;
+  min-height: 100vh;
 }
 img {
   width: 100%;
@@ -82,4 +82,18 @@ button {
   float: left;
   margin-left: 50px;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 980px) {
+  .Right {
+    display: none;
+  }
+  .Left {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .Left p {
+    padding-right: 40px;
+  }
 }
